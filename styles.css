@@ -5,6 +5,24 @@ body {
   margin: 0;
   overflow-x: hidden;
 }
+p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+}
+a {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  margin: 10px;
+  transition: 0.5s;
+  animation: fadein 2s;
+}
+a:hover {
+  color: mediumseagreen;
+}
 h1 {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
@@ -22,24 +40,41 @@ hr {
 }
 .section {
   width: 100vw;
-  min-height: 100vh;
+}
+.link-bg {
+  display: inline-block;
+  background-color: none;
+  transition: 0.5s;
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+}
+.link-bg:hover {
+  background-color: mediumseagreen;
 }
 #landing {
   background-image: url("images/background.jpg");
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
+  height: 100vh;
 }
-#introduction {
+#landing-links-container {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 10px;
+}
+#landing-introduction-conatiner {
   padding-left: 20%;
   padding-top: 10%;
   display: inline-block;
 }
-#name {
+#landing-name {
   font-size: 50px;
   animation: fadein 2s;
 }
-#occupation {
+#landing-occupation {
   font-size: 30px;
   animation: fadein 3s;
 }
@@ -47,7 +82,7 @@ hr {
   padding: 5px;
   animation: fadein 3s;
 }
-#down-arrow {
+#landing-down-arrow {
   height: 20px;
   width: 50px;
   animation: fadein 3s;
@@ -56,15 +91,35 @@ hr {
   left: 50%;
   transform: translateX(-25px);
 }
+#about-me {
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+#about-me-container {
+  max-width: 1920px;
+  width: 100%;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+#about-me-heading-container {
+  padding-top: 50px;
+  display: inline-block;
+}
+#about-me-heading {
+  color: rgba(44, 44, 44, 0.933);
+}
+
 @media (max-width: 700px) {
-  #introduction {
+  #landing-introduction-container {
     padding-left: 10px;
     padding-top: 10%;
   }
-  #name {
+  #landing-name {
     font-size: 40px;
   }
-  #occupation {
+  #landing-occupation {
     font-size: 20px;
   }
 }
