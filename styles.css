@@ -75,6 +75,20 @@ button:hover {
 .link-bg:hover {
   background-color: mediumseagreen;
 }
+#header {
+  padding: 10px;
+  background-color: white;
+  border-bottom: 1px solid rgb(222, 222, 222);
+  top: 0;
+  position: sticky;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#header-name {
+  display: inline;
+}
 #landing {
   background-image: url("images/background.jpg");
   background-size: cover;
@@ -118,8 +132,8 @@ button:hover {
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  padding-bottom: 50px;
   padding-top: 50px;
+  padding-bottom: 50px;
 }
 .content-container {
   max-width: 1920px;
@@ -128,8 +142,9 @@ button:hover {
   padding-right: 100px;
 }
 #projects {
-  height: 100vh;
+  padding-top: 50px;
   padding-bottom: 50px;
+  background-color: rgb(240, 240, 240);
 }
 #project-cards-container {
   padding-top: 20px;
@@ -138,6 +153,7 @@ button:hover {
   flex-wrap: wrap;
 }
 #project-card {
+  background-color: white;
   padding: 10px;
   border-radius: 10px;
   border: 1px solid rgb(222, 222, 222);
