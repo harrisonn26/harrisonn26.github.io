@@ -1,0 +1,78 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+h1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+h3 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+}
+hr {
+  border: 1px solid rgba(78, 78, 78, 0.933);
+}
+.section {
+  width: 100vw;
+  min-height: 100vh;
+}
+#landing {
+  background-image: url("images/background.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+#introduction {
+  padding-left: 20%;
+  padding-top: 10%;
+  display: inline-block;
+}
+#name {
+  font-size: 50px;
+  animation: fadein 2s;
+}
+#occupation {
+  font-size: 30px;
+  animation: fadein 3s;
+}
+.socials {
+  padding: 5px;
+  animation: fadein 3s;
+}
+#down-arrow {
+  height: 20px;
+  width: 50px;
+  animation: fadein 3s;
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-25px);
+}
+@media (max-width: 700px) {
+  #introduction {
+    padding-left: 10px;
+    padding-top: 10%;
+  }
+  #name {
+    font-size: 40px;
+  }
+  #occupation {
+    font-size: 20px;
+  }
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
