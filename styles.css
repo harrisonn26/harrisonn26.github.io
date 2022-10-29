@@ -213,8 +213,14 @@ button:hover {
 
 /*Media Queries*/
 @media (max-width: 700px) {
-  #landing-introduction-container {
-    padding-left: 10px;
+  .content-container {
+    max-width: 1920px;
+    width: 100%;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  #landing-introduction-conatiner {
+    padding-left: 20px;
     padding-top: 10%;
   }
   #landing-name {
@@ -235,6 +241,9 @@ button:hover {
   #header-menu {
     flex-direction: column;
     display: none;
+  }
+  #project-image {
+    width: calc(100vw - 60px);
   }
 }
 @keyframes fadein {
