@@ -37,10 +37,8 @@
       </a>
     </div>
     <div class="section" id="about-me">
-      <div id="about-me-container">
-        <div id="about-me-heading-container">
-          <h1 id="about-me-heading">About Me</h1>
-        </div>
+      <div class="content-container">
+        <h1>About Me</h1>
         <p>
           I am a front end developer with a passion for building fast,
           responsive web applications. I have three years experience with HTML,
@@ -51,7 +49,35 @@
         </p>
       </div>
     </div>
-    <div class="section" id="projects"></div>
+    <div class="section" id="projects">
+      <div class="content-container">
+        <h1>Projects</h1>
+        <div id="project-cards-container">
+          <div id="project-card">
+            <h2>Portfolio Website</h2>
+            <img
+              id="project-image"
+              src="images/personal_website.png"
+              alt="Project Image"
+            />
+            <div id="projects-button-container">
+              <button
+                type="button"
+                onclick="window.open('https://github.com/harrisonn26/portfolio','_blank')"
+              >
+                Source
+              </button>
+              <button
+                type="button"
+                onclick="window.open('https://github.com/harrisonn26/portfolio','_blank')"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="section" id="contact"></div>
   </body>
 </html>

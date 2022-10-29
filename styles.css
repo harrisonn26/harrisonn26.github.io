@@ -24,8 +24,15 @@ a:hover {
   color: mediumseagreen;
 }
 h1 {
+  color: mediumseagreen;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+h2 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
   margin: 0;
   padding: 0;
 }
@@ -37,6 +44,22 @@ h3 {
 }
 hr {
   border: 1px solid rgba(78, 78, 78, 0.933);
+}
+button {
+  border: 1px solid mediumseagreen;
+  border-radius: 5px;
+  background: none;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  transition: 0.5s;
+  margin: 5px;
+  padding: 5px 10px 5px 10px;
+  width: 100px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: mediumseagreen;
+  color: white;
 }
 .section {
   width: 100vw;
@@ -92,23 +115,40 @@ hr {
   transform: translateX(-25px);
 }
 #about-me {
-  height: 100vh;
   display: flex;
   align-items: flex-start;
   justify-content: center;
+  padding-bottom: 50px;
+  padding-top: 50px;
 }
-#about-me-container {
+.content-container {
   max-width: 1920px;
   width: 100%;
   padding-left: 100px;
   padding-right: 100px;
 }
-#about-me-heading-container {
-  padding-top: 50px;
-  display: inline-block;
+#projects {
+  height: 100vh;
+  padding-bottom: 50px;
 }
-#about-me-heading {
-  color: rgba(44, 44, 44, 0.933);
+#project-cards-container {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#project-card {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgb(222, 222, 222);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#project-image {
+  border-radius: 10px;
+  width: 400px;
 }
 
 @media (max-width: 700px) {
