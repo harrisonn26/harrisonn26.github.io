@@ -1,3 +1,4 @@
+/*Globals*/
 html {
   scroll-behavior: smooth;
 }
@@ -66,6 +67,13 @@ button:hover {
   padding-top: 50px;
   padding-bottom: 50px;
 }
+.content-container {
+  max-width: 1920px;
+  width: 100%;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+/*Landing*/
 .link-bg {
   display: inline-block;
   background-color: none;
@@ -76,20 +84,6 @@ button:hover {
 }
 .link-bg:hover {
   background-color: mediumseagreen;
-}
-#header {
-  padding: 10px;
-  background-color: white;
-  border-bottom: 1px solid rgb(222, 222, 222);
-  top: 0;
-  position: sticky;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-#header-name {
-  display: inline;
 }
 #landing {
   background-image: url("images/background.jpg");
@@ -130,18 +124,45 @@ button:hover {
   left: 50%;
   transform: translateX(-25px);
 }
+/*Header*/
+#header {
+  transition: 0.5s;
+  padding: 10px;
+  background-color: white;
+  border-bottom: 1px solid rgb(222, 222, 222);
+  top: 0;
+  position: sticky;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#header-name {
+  display: inline;
+}
+#header-menu {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+#header-image {
+  display: none;
+  cursor: pointer;
+}
+.header-link {
+  display: block;
+}
+/*About Me*/
 #about-me {
   display: flex;
   align-items: flex-start;
   justify-content: center;
 }
-.content-container {
-  max-width: 1920px;
-  width: 100%;
-  padding-left: 100px;
-  padding-right: 100px;
-}
+/*Projects*/
 #projects {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
   background-color: rgb(240, 240, 240);
 }
 #project-cards-container {
@@ -164,10 +185,19 @@ button:hover {
   border-radius: 10px;
   width: 400px;
 }
+/*Resume*/
+#resume {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
 #resume-download {
   text-decoration: underline;
-}
+} /*Contact*/
 #contact {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
   background-color: rgb(240, 240, 240);
 }
 .contact_icon {
@@ -180,6 +210,8 @@ button:hover {
   flex-direction: row;
   align-items: center;
 }
+
+/*Media Queries*/
 @media (max-width: 700px) {
   #landing-introduction-container {
     padding-left: 10px;
@@ -190,6 +222,19 @@ button:hover {
   }
   #landing-occupation {
     font-size: 20px;
+  }
+  #landing-links-container {
+    display: none;
+  }
+  #header {
+    align-items: flex-start;
+  }
+  #header-image {
+    display: block;
+  }
+  #header-menu {
+    flex-direction: column;
+    display: none;
   }
 }
 @keyframes fadein {

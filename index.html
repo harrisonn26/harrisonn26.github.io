@@ -10,8 +10,19 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap"
       rel="stylesheet"
     />
+    <script>
+      function toggleMenu() {
+        var x = document.getElementById("header-menu");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
   </head>
   <body>
+    <!--Landing-->
     <div class="section" id="landing">
       <div id="landing-links-container">
         <a href="#about-me">About Me</a><a href="#projects">Projects</a
@@ -36,13 +47,24 @@
         <img id="landing-down-arrow" src="images/down-arrow.svg" alt="" />
       </a>
     </div>
+
+    <!--Header-->
     <div id="header">
       <h1 id="header-name">Harrison Norris</h1>
-      <div>
-        <a href="#about-me">About Me</a><a href="#projects">Projects</a
-        ><a href="#resume">Resume</a><a href="#contact">Contact</a>
+      <div id="header-menu">
+        <a class="header-link" href="#about-me">About Me</a
+        ><a class="header-link" href="#projects">Projects</a
+        ><a class="header-link" href="#resume">Resume</a
+        ><a class="header-link" href="#contact">Contact</a>
       </div>
+      <img
+        onclick="toggleMenu()"
+        id="header-image"
+        src="images/menu.svg"
+        alt=""
+      />
     </div>
+    <!--About Me-->
     <div class="section" id="about-me">
       <div class="content-container">
         <h1>About Me</h1>
@@ -56,6 +78,7 @@
         </p>
       </div>
     </div>
+    <!--Projects-->
     <div class="section" id="projects">
       <div class="content-container">
         <h1>Projects</h1>
@@ -85,6 +108,7 @@
         </div>
       </div>
     </div>
+    <!--Resume-->
     <div class="section" id="resume">
       <div class="content-container">
         <h1>Resume</h1>
@@ -98,6 +122,7 @@
         </p>
       </div>
     </div>
+    <!--Contact-->
     <div class="section" id="contact">
       <div class="content-container">
         <h1>Contact</h1>
