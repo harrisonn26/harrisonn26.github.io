@@ -1,141 +1,141 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Harrison Norris</title>
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap"
-      rel="stylesheet"
-    />
-    <script>
-      function toggleMenu() {
-        var x = document.getElementById("header-menu");
-        if (x.style.display === "block") {
-          x.style.display = "none";
-        } else {
-          x.style.display = "block";
-        }
-      }
-    </script>
-  </head>
-  <body>
-    <!--Landing-->
-    <div class="section" id="landing">
-      <div id="landing-links-container">
-        <a href="#about-me">About Me</a><a href="#projects">Projects</a
-        ><a href="#resume">Resume</a><a href="#contact">Contact</a>
-      </div>
-      <div id="landing-introduction-conatiner">
-        <h1 id="landing-name">Harrison Norris</h1>
-        <h3 id="landing-occupation">Front End Developer</h3>
-        <hr />
-        <a href="https://github.com/harrisonn26" target="_blank">
-          <div class="link-bg">
-            <img class="socials" src="images/github.svg" alt="" /></div
-        ></a>
-        <a
-          href="https://www.linkedin.com/in/harrison-norris-814a5b20a/"
-          target="_blank"
-          ><div class="link-bg">
-            <img class="socials" src="images/linkedin.svg" alt="" /></div
-        ></a>
-      </div>
-      <a href="#about-me">
-        <img id="landing-down-arrow" src="images/down-arrow.svg" alt="" />
-      </a>
-    </div>
+	<head>
+		<title>Harrison Norris</title>
+		<meta content="width=device-width, initial-scale=1" name="viewport" />
+		<link rel="stylesheet" href="styles.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap"
+			rel="stylesheet"
+		/>
+		<script>
+			function toggleMenu() {
+				var x = document.getElementById("header-menu");
+				if (x.style.display === "block") {
+					x.style.display = "none";
+				} else {
+					x.style.display = "block";
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<!--Landing-->
+		<div class="section" id="landing">
+			<div id="landing-links-container">
+				<a href="#about-me">About Me</a><a href="#projects">Projects</a
+				><a href="#resume">Resume</a><a href="#contact">Contact</a>
+			</div>
+			<div id="landing-introduction-conatiner">
+				<h1 id="landing-name">Harrison Norris</h1>
+				<h3 id="landing-occupation">Front End Developer</h3>
+				<hr />
+				<a href="https://github.com/harrisonn26" target="_blank">
+					<div class="link-bg">
+						<img class="socials" src="images/github.svg" alt="" /></div
+				></a>
+				<a
+					href="https://www.linkedin.com/in/harrison-norris-814a5b20a/"
+					target="_blank"
+					><div class="link-bg">
+						<img class="socials" src="images/linkedin.svg" alt="" /></div
+				></a>
+			</div>
+			<a href="#about-me">
+				<img id="landing-down-arrow" src="images/down-arrow.svg" alt="" />
+			</a>
+		</div>
 
-    <!--Header-->
-    <div id="header">
-      <h1 id="header-name">Harrison Norris</h1>
-      <div id="header-menu">
-        <a class="header-link" href="#about-me">About Me</a
-        ><a class="header-link" href="#projects">Projects</a
-        ><a class="header-link" href="#resume">Resume</a
-        ><a class="header-link" href="#contact">Contact</a>
-      </div>
-      <img
-        onclick="toggleMenu()"
-        id="header-image"
-        src="images/menu.svg"
-        alt=""
-      />
-    </div>
-    <!--About Me-->
-    <div class="section" id="about-me">
-      <div class="content-container">
-        <h1>About Me</h1>
-        <p>
-          I am a front end developer with a passion for building fast,
-          responsive web applications. I have three years experience with HTML,
-          CSS and JS and two years experience with React. I have worked in small
-          teams as well as completing solo projects witch are available to view
-          below. I have a bachelors degree in Computer Science from the
-          University of Wollongong.
-        </p>
-      </div>
-    </div>
-    <!--Projects-->
-    <div class="section" id="projects">
-      <div class="content-container">
-        <h1>Projects</h1>
-        <div id="project-cards-container">
-          <div id="project-card">
-            <h2>Portfolio Website</h2>
-            <img
-              id="project-image"
-              src="images/personal_website.png"
-              alt="Project Image"
-            />
-            <div id="projects-button-container">
-              <button
-                type="button"
-                onclick="window.open('https://github.com/harrisonn26/portfolio','_blank')"
-              >
-                Source
-              </button>
-              <button
-                type="button"
-                onclick="window.open('https://github.com/harrisonn26/portfolio','_blank')"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--Resume-->
-    <div class="section" id="resume">
-      <div class="content-container">
-        <h1>Resume</h1>
-        <p>
-          Download my resume<a
-            id="resume-download"
-            href="Harrison Norris.pdf"
-            download
-            >here</a
-          >
-        </p>
-      </div>
-    </div>
-    <!--Contact-->
-    <div class="section" id="contact">
-      <div class="content-container">
-        <h1>Contact</h1>
-        <p>I'd love to hear from you.</p>
-        <div class="contact_method">
-          <img class="contact_icon" src="images/email.svg" alt="Email" />
-          <h3>harrisonorris26@gmail.com</h3>
-        </div>
-        <div class="contact_method">
-          <img class="contact_icon" src="images/phone.svg" alt="Phone" />
-          <h3>0455 109 873</h3>
-        </div>
-      </div>
-    </div>
-  </body>
+		<!--Header-->
+		<div id="header">
+			<h1 id="header-name">Harrison Norris</h1>
+			<div id="header-menu">
+				<a class="header-link" href="#about-me">About Me</a
+				><a class="header-link" href="#projects">Projects</a
+				><a class="header-link" href="#resume">Resume</a
+				><a class="header-link" href="#contact">Contact</a>
+			</div>
+			<img
+				onclick="toggleMenu()"
+				id="header-image"
+				src="images/menu.svg"
+				alt=""
+			/>
+		</div>
+		<!--About Me-->
+		<div class="section" id="about-me">
+			<div class="content-container">
+				<h1>About Me</h1>
+				<p>
+					I am a front end developer with a passion for building fast,
+					responsive web applications. I have three years experience with HTML,
+					CSS and JS and two years experience with React. I have worked in small
+					teams as well as completing solo projects which are available to view
+					below. I have a bachelors degree in Computer Science from the
+					University of Wollongong.
+				</p>
+			</div>
+		</div>
+		<!--Projects-->
+		<div class="section" id="projects">
+			<div class="content-container">
+				<h1>Projects</h1>
+				<div id="project-cards-container">
+					<div id="project-card">
+						<h2>Portfolio Website</h2>
+						<img
+							id="project-image"
+							src="images/personal_website.png"
+							alt="Project Image"
+						/>
+						<div id="projects-button-container">
+							<button
+								type="button"
+								onclick="window.open('https://github.com/harrisonn26/portfolio','_blank')"
+							>
+								Source
+							</button>
+							<button
+								type="button"
+								onclick="window.open('https://github.com/harrisonn26/portfolio','_blank')"
+							>
+								Live Demo
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--Resume-->
+		<div class="section" id="resume">
+			<div class="content-container">
+				<h1>Resume</h1>
+				<p>
+					Download my resume<a
+						id="resume-download"
+						href="Harrison Norris.pdf"
+						download
+						>here</a
+					>
+				</p>
+			</div>
+		</div>
+		<!--Contact-->
+		<div class="section" id="contact">
+			<div class="content-container">
+				<h1>Contact</h1>
+				<p>I'd love to hear from you.</p>
+				<div class="contact_method">
+					<img class="contact_icon" src="images/email.svg" alt="Email" />
+					<h3>harrisonorris26@gmail.com</h3>
+				</div>
+				<div class="contact_method">
+					<img class="contact_icon" src="images/phone.svg" alt="Phone" />
+					<h3>0455 109 873</h3>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
