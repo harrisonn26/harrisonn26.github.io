@@ -277,6 +277,15 @@ button:hover:enabled {
 	#project-image {
 		width: calc(100vw - 60px);
 	}
+	#project-description {
+		width: calc(100vw - 65px);
+	}
+	button {
+		width: 100%;
+	}
+	#projects-button-container {
+		width: 100%;
+	}
 }
 @keyframes fadein {
 	from {
