@@ -52,10 +52,11 @@ button {
 	background: none;
 	font-family: "Open Sans", sans-serif;
 	font-weight: 300;
+	font-size: 16px;
 	transition: 0.5s;
 	margin: 5px;
 	padding: 5px 10px 5px 10px;
-	width: 100px;
+	width: 190px;
 	cursor: pointer;
 }
 button:hover {
@@ -185,6 +186,13 @@ button:hover {
 #project-image {
 	border-radius: 10px;
 	width: 400px;
+}
+#project-description {
+	width: 380px;
+	padding: 10px;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 300;
+	font-size: 20px;
 }
 /*Resume*/
 #resume {
