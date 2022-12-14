@@ -19,6 +19,37 @@
 					x.style.display = "block";
 				}
 			}
+			function enlargeImage(id) {
+				switch (id) {
+					case 0:
+						document.getElementById("website-enlarged").style.visibility =
+							"visible";
+						break;
+					case 1:
+						document.getElementById("solitare-enlarged").style.visibility =
+							"visible";
+						break;
+					case 2:
+						document.getElementById("crm-enlarged").style.visibility =
+							"visible";
+						break;
+				}
+			}
+			function revertEnlarge(id) {
+				switch (id) {
+					case 0:
+						document.getElementById("website-enlarged").style.visibility =
+							"hidden";
+						break;
+					case 1:
+						document.getElementById("solitare-enlarged").style.visibility =
+							"hidden";
+						break;
+					case 2:
+						document.getElementById("crm-enlarged").style.visibility = "hidden";
+						break;
+				}
+			}
 		</script>
 	</head>
 	<body>
@@ -89,6 +120,7 @@
 							id="project-image"
 							src="images/personal_website.png"
 							alt="Project Image"
+							onclick="enlargeImage(0)"
 						/>
 						<div id="projects-button-container">
 							<button
@@ -115,6 +147,7 @@
 							id="project-image"
 							src="images/solitare.png"
 							alt="Project Image"
+							onclick="enlargeImage(1)"
 						/>
 						<div id="projects-button-container">
 							<button
@@ -136,6 +169,39 @@
 							Built using React and Redux.
 						</div>
 					</div>
+					<div id="project-card">
+						<h2>South Coast Private Hospital CRM</h2>
+						<img
+							id="project-image"
+							src="images/scphcrm.png"
+							alt="Project Image"
+							onclick="enlargeImage(2)"
+						/>
+						<div id="projects-button-container">
+							<button
+								disabled
+								type="button"
+								onclick="window.open('https://github.com/harrisonn26/solitare','_blank')"
+							>
+								Source
+							</button>
+							<button type="button" href="Harrison Norris.pdf">
+								<a
+									id="technical-report"
+									href="Technical Report.pdf"
+									target="_blank"
+									>Technical Report</a
+								>
+							</button>
+						</div>
+						<div id="project-description">
+							A large scale project where I was the Front-end Developer.
+							Completed as part of my study at UOW. This project was awarded
+							runner up at the CSIT321 trade show.
+							<br /><br />
+							Built using React.
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -147,7 +213,7 @@
 					Download my resume<a
 						id="resume-download"
 						href="Harrison Norris.pdf"
-						download
+						target="_blank"
 						>here</a
 					>
 				</p>
@@ -167,6 +233,30 @@
 					<h3>0455 109 873</h3>
 				</div>
 			</div>
+		</div>
+		<div
+			id="website-enlarged"
+			class="enlarged-image-container"
+			style="visibility: hidden"
+			onclick="revertEnlarge(0)"
+		>
+			<img src="images/personal_website.png" class="enlarged-image" />
+		</div>
+		<div
+			id="solitare-enlarged"
+			class="enlarged-image-container"
+			style="visibility: hidden"
+			onclick="revertEnlarge(1)"
+		>
+			<img src="images/solitare.png" class="enlarged-image" />
+		</div>
+		<div
+			id="crm-enlarged"
+			class="enlarged-image-container"
+			style="visibility: hidden"
+			onclick="revertEnlarge(2)"
+		>
+			<img src="images/scphcrm.png" class="enlarged-image" />
 		</div>
 	</body>
 </html>

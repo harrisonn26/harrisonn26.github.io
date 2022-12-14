@@ -57,12 +57,13 @@ button {
 	margin: 5px;
 	padding: 5px 10px 5px 10px;
 	width: 190px;
-	cursor: pointer;
 }
-button:hover {
+button:hover:enabled {
 	background-color: rgb(0, 133, 119);
 	color: white;
+	cursor: pointer;
 }
+
 .section {
 	width: 100vw;
 	padding-top: 50px;
@@ -179,13 +180,17 @@ button:hover {
 	border-radius: 10px;
 	border: 1px solid rgb(222, 222, 222);
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
 	flex-direction: column;
 }
 #project-image {
 	border-radius: 10px;
 	width: 400px;
+	transition: 0.5s;
+}
+#project-image:hover {
+	filter: brightness(50%);
 }
 #project-description {
 	width: 380px;
@@ -193,6 +198,24 @@ button:hover {
 	font-family: "Open Sans", sans-serif;
 	font-weight: 300;
 	font-size: 20px;
+}
+#technical-report {
+	font-size: 16px;
+}
+.enlarged-image-container {
+	position: fixed;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.307);
+}
+.enlarged-image {
+	width: 80%;
 }
 /*Resume*/
 #resume {
