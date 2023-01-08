@@ -33,6 +33,10 @@
 						document.getElementById("crm-enlarged").style.visibility =
 							"visible";
 						break;
+					case 3:
+						document.getElementById("galimbang-enlarged").style.visibility =
+							"visible";
+						break;
 				}
 			}
 			function revertEnlarge(id) {
@@ -47,6 +51,10 @@
 						break;
 					case 2:
 						document.getElementById("crm-enlarged").style.visibility = "hidden";
+						break;
+					case 3:
+						document.getElementById("galimbang-enlarged").style.visibility =
+							"hidden";
 						break;
 				}
 			}
@@ -185,7 +193,7 @@
 							>
 								Source
 							</button>
-							<button type="button" href="Harrison Norris.pdf">
+							<button type="button" href="Technical Report.pdf">
 								<a
 									id="technical-report"
 									href="Technical Report.pdf"
@@ -200,6 +208,37 @@
 							runner up at the CSIT321 trade show.
 							<br /><br />
 							Built using React.
+						</div>
+					</div>
+					<div id="project-card">
+						<h2>Galimbang Beef</h2>
+						<img
+							id="project-image"
+							src="images/galimbang.png"
+							alt="Project Image"
+							onclick="enlargeImage(3)"
+						/>
+						<div id="projects-button-container">
+							<button
+								type="button"
+								onclick="window.open('https://github.com/harrisonn26/galimbang','_blank')"
+							>
+								Source
+							</button>
+							<button
+								type="button"
+								onclick="window.open('https://galimbang-192cf.web.app/','_blank')"
+							>
+								Live Demo
+							</button>
+						</div>
+						<div id="project-description">
+							A medium size website built for Galimbang Beef to showcase their
+							new Angus Stud.
+							<br />
+							Due to be launched in the coming weeks.
+							<br /><br />
+							Built using NextJS and Firebase.
 						</div>
 					</div>
 				</div>
@@ -257,6 +296,14 @@
 			onclick="revertEnlarge(2)"
 		>
 			<img src="images/scphcrm.png" class="enlarged-image" />
+		</div>
+		<div
+			id="galimbang-enlarged"
+			class="enlarged-image-container"
+			style="visibility: hidden"
+			onclick="revertEnlarge(3)"
+		>
+			<img src="images/galimbang.png" class="enlarged-image" />
 		</div>
 	</body>
 </html>
