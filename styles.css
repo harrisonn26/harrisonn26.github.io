@@ -184,9 +184,12 @@ button:hover:enabled {
 	align-items: center;
 	flex-direction: column;
 }
+
 #project-image {
-	border-radius: 10px;
 	width: 400px;
+	height: 225px;
+	border-radius: 10px;
+	object-fit: cover;
 	transition: 0.5s;
 }
 #project-image:hover {
@@ -281,7 +284,7 @@ button:hover:enabled {
 		width: calc(100vw - 65px);
 	}
 	button {
-		width: 100%;
+		width: calc(100% - 10px);
 	}
 	#projects-button-container {
 		width: 100%;
